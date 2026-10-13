@@ -1,0 +1,19 @@
+module ejer_2 (
+    input wire CLOCK_50,   // Reloj físico de 50 MHz de la DE0-CV (Pin M9)
+    output reg clk_out     // Señal de reloj dividida o salida hacia un LED (Pin AA2 para LEDR0)
+);
+
+    // Contador para simular la división de frecuencia en hardware real
+    reg [24:0] contador = 0;
+
+    always @(posedge CLOCK_50) begin
+        // Cada vez que el contador llega a su límite, invierte la señal de salida
+        if (contador == 25000000 - 1) begin
+            clk_out <= ~clk_out;
+            contador <= 0;
+        end else begin
+            contador <= contador + 1;
+        end
+    end
+
+endmodule 
