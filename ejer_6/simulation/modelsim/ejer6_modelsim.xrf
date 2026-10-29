@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/lab3_diego_alvarado/lab3_diego_alvarado/ejer_6/ejer6.v
+source_file = 1, C:/lab3_diego_alvarado/lab3_diego_alvarado/ejer_6/db/ejer6.cbx.xml
+design_name = ejer6
+instance = comp, \oQ~output , oQ~output, ejer6, 1
+instance = comp, \iCLK~input , iCLK~input, ejer6, 1
+instance = comp, \iT~input , iT~input, ejer6, 1
+instance = comp, \D1|Q~0 , D1|Q~0, ejer6, 1
+instance = comp, \D1|Q~feeder , D1|Q~feeder, ejer6, 1
+instance = comp, \iRST~input , iRST~input, ejer6, 1
+instance = comp, \D1|Q , D1|Q, ejer6, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, ejer6, 1

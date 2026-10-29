@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.568
+TNS   : -77.212
+
+Type  : Slow 1100mV 85C Model Setup 'Divisor:DIV1|CLK_LENTO'
+Slack : -0.591
+TNS   : -0.591
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -1.521
+TNS   : -1.521
+
+Type  : Slow 1100mV 85C Model Hold 'Divisor:DIV1|CLK_LENTO'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.538
+TNS   : -20.822
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Divisor:DIV1|CLK_LENTO'
+Slack : -0.538
+TNS   : -0.784
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.792
+TNS   : -77.335
+
+Type  : Slow 1100mV 0C Model Setup 'Divisor:DIV1|CLK_LENTO'
+Slack : -0.563
+TNS   : -0.563
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -1.489
+TNS   : -1.489
+
+Type  : Slow 1100mV 0C Model Hold 'Divisor:DIV1|CLK_LENTO'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.538
+TNS   : -21.427
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Divisor:DIV1|CLK_LENTO'
+Slack : -0.538
+TNS   : -0.777
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -1.801
+TNS   : -25.780
+
+Type  : Fast 1100mV 85C Model Setup 'Divisor:DIV1|CLK_LENTO'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.822
+TNS   : -0.822
+
+Type  : Fast 1100mV 85C Model Hold 'Divisor:DIV1|CLK_LENTO'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.308
+TNS   : -2.722
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Divisor:DIV1|CLK_LENTO'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.684
+TNS   : -22.522
+
+Type  : Fast 1100mV 0C Model Setup 'Divisor:DIV1|CLK_LENTO'
+Slack : 0.038
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.831
+TNS   : -0.831
+
+Type  : Fast 1100mV 0C Model Hold 'Divisor:DIV1|CLK_LENTO'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.315
+TNS   : -2.817
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Divisor:DIV1|CLK_LENTO'
+Slack : 0.154
+TNS   : 0.000
+
+------------------------------------------------------------
