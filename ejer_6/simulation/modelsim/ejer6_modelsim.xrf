@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, C:/lab3_diego_alvarado/lab3_diego_alvarado/ejer_6/ejer6.v
+source_file = 1, C:/lab3_diego_alvarado/lab3_diego_alvarado/ejer_6/output_files/Chain2.cdf
 source_file = 1, C:/lab3_diego_alvarado/lab3_diego_alvarado/ejer_6/db/ejer6.cbx.xml
 design_name = ejer6
 instance = comp, \oQ~output , oQ~output, ejer6, 1

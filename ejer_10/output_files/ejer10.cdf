@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/lab3_diego_alvarado/lab3_diego_alvarado/ejer10/output_files/") File("ejer10.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/lab3_diego_alvarado/lab3_diego_alvarado/ejer_10/output_files/") File("ejer10.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

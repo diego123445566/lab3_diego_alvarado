@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for ejer6
-Tue Oct 20 17:53:44 2026
+Thu Nov 05 17:13:10 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -132,13 +132,13 @@ applicable agreement for further details.
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
 
 
-+--------------------------------------------------+
-; Slow 1100mV 85C Model Fmax Summary               ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 558.66 MHz ; 558.66 MHz      ; iCLK       ;      ;
-+------------+-----------------+------------+------+
++-------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary              ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 559.6 MHz ; 559.6 MHz       ; iCLK       ;      ;
++-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -153,7 +153,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; iCLK  ; -0.790 ; -0.790             ;
+; iCLK  ; -0.787 ; -0.787             ;
 +-------+--------+--------------------+
 
 
@@ -162,7 +162,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; iCLK  ; 0.053 ; 0.000              ;
+; iCLK  ; 0.058 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -183,7 +183,7 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; iCLK  ; -0.538 ; -0.859                           ;
+; iCLK  ; -0.538 ; -0.900                           ;
 +-------+--------+----------------------------------+
 
 
@@ -192,26 +192,26 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; iT        ; iCLK       ; 1.251 ; 1.634 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; 1.835 ; 2.162 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------+
-; Hold Times                                                             ;
-+-----------+------------+-------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+--------+------------+-----------------+
-; iT        ; iCLK       ; 0.072 ; -0.187 ; Rise       ; iCLK            ;
-+-----------+------------+-------+--------+------------+-----------------+
-
-
 +-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
+; Hold Times                                                              ;
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; oQ        ; iCLK       ; 10.100 ; 10.943 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; -0.383 ; -0.617 ; Rise       ; iCLK            ;
 +-----------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++-----------+------------+-------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+--------+------------+-----------------+
+; oQ        ; iCLK       ; 9.600 ; 10.352 ; Rise       ; iCLK            ;
++-----------+------------+-------+--------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------+
@@ -219,7 +219,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; oQ        ; iCLK       ; 9.100 ; 9.690 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 8.687 ; 9.290 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -229,13 +229,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary                ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 570.78 MHz ; 570.78 MHz      ; iCLK       ;      ;
-+------------+-----------------+------------+------+
++--------------------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                                                                ;
++------------+-----------------+------------+------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                 ;
++------------+-----------------+------------+------------------------------------------------------+
+; 570.13 MHz ; 566.25 MHz      ; iCLK       ; limit due to low minimum pulse width violation (tcl) ;
++------------+-----------------+------------+------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -244,7 +244,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; iCLK  ; -0.752 ; -0.752            ;
+; iCLK  ; -0.754 ; -0.754            ;
 +-------+--------+-------------------+
 
 
@@ -253,7 +253,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; iCLK  ; 0.025 ; 0.000             ;
+; iCLK  ; 0.030 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -274,7 +274,7 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; iCLK  ; -0.538 ; -0.866                          ;
+; iCLK  ; -0.538 ; -0.921                          ;
 +-------+--------+---------------------------------+
 
 
@@ -283,17 +283,17 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; iT        ; iCLK       ; 1.325 ; 1.727 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; 1.979 ; 2.337 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------+
-; Hold Times                                                             ;
-+-----------+------------+-------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+--------+------------+-----------------+
-; iT        ; iCLK       ; 0.004 ; -0.277 ; Rise       ; iCLK            ;
-+-----------+------------+-------+--------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; iT        ; iCLK       ; -0.496 ; -0.733 ; Rise       ; iCLK            ;
++-----------+------------+--------+--------+------------+-----------------+
 
 
 +------------------------------------------------------------------------+
@@ -301,7 +301,7 @@ No paths to report.
 +-----------+------------+-------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+--------+------------+-----------------+
-; oQ        ; iCLK       ; 9.853 ; 10.781 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 9.351 ; 10.159 ; Rise       ; iCLK            ;
 +-----------+------------+-------+--------+------------+-----------------+
 
 
@@ -310,7 +310,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; oQ        ; iCLK       ; 8.869 ; 9.539 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 8.449 ; 9.105 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -331,11 +331,11 @@ No synchronizer chains to report.
 
 +------------------------------------+
 ; Fast 1100mV 85C Model Hold Summary ;
-+-------+--------+-------------------+
-; Clock ; Slack  ; End Point TNS     ;
-+-------+--------+-------------------+
-; iCLK  ; -0.006 ; -0.006            ;
-+-------+--------+-------------------+
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; iCLK  ; 0.004 ; 0.000              ;
++-------+-------+--------------------+
 
 
 ------------------------------------------
@@ -355,7 +355,7 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; iCLK  ; -0.318 ; -0.318                           ;
+; iCLK  ; -0.319 ; -0.319                           ;
 +-------+--------+----------------------------------+
 
 
@@ -364,7 +364,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; iT        ; iCLK       ; 0.767 ; 1.371 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; 1.096 ; 1.720 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -373,7 +373,7 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; iT        ; iCLK       ; -0.066 ; -0.604 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; -0.342 ; -0.900 ; Rise       ; iCLK            ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -382,7 +382,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; oQ        ; iCLK       ; 5.497 ; 6.274 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 5.172 ; 5.873 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -391,7 +391,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; oQ        ; iCLK       ; 4.960 ; 5.568 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 4.693 ; 5.296 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -415,7 +415,7 @@ No synchronizer chains to report.
 +-------+--------+------------------+
 ; Clock ; Slack  ; End Point TNS    ;
 +-------+--------+------------------+
-; iCLK  ; -0.031 ; -0.031           ;
+; iCLK  ; -0.019 ; -0.019           ;
 +-------+--------+------------------+
 
 
@@ -436,7 +436,7 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; iCLK  ; -0.317 ; -0.317                          ;
+; iCLK  ; -0.323 ; -0.323                          ;
 +-------+--------+---------------------------------+
 
 
@@ -445,7 +445,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; iT        ; iCLK       ; 0.765 ; 1.362 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; 1.072 ; 1.685 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -454,7 +454,7 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; iT        ; iCLK       ; -0.080 ; -0.620 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; -0.337 ; -0.884 ; Rise       ; iCLK            ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -463,7 +463,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; oQ        ; iCLK       ; 5.248 ; 5.887 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 4.946 ; 5.507 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -472,7 +472,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; oQ        ; iCLK       ; 4.721 ; 5.209 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 4.478 ; 4.946 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -487,10 +487,10 @@ No synchronizer chains to report.
 +------------------+--------+--------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+--------+----------+---------+---------------------+
-; Worst-case Slack ; -0.790 ; -0.031 ; N/A      ; N/A     ; -0.538              ;
-;  iCLK            ; -0.790 ; -0.031 ; N/A      ; N/A     ; -0.538              ;
-; Design-wide TNS  ; -0.79  ; -0.031 ; 0.0      ; 0.0     ; -0.866              ;
-;  iCLK            ; -0.790 ; -0.031 ; N/A      ; N/A     ; -0.866              ;
+; Worst-case Slack ; -0.787 ; -0.019 ; N/A      ; N/A     ; -0.538              ;
+;  iCLK            ; -0.787 ; -0.019 ; N/A      ; N/A     ; -0.538              ;
+; Design-wide TNS  ; -0.787 ; -0.019 ; 0.0      ; 0.0     ; -0.921              ;
+;  iCLK            ; -0.787 ; -0.019 ; N/A      ; N/A     ; -0.921              ;
 +------------------+--------+--------+----------+---------+---------------------+
 
 
@@ -499,26 +499,26 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; iT        ; iCLK       ; 1.325 ; 1.727 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; 1.979 ; 2.337 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------+
-; Hold Times                                                             ;
-+-----------+------------+-------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+--------+------------+-----------------+
-; iT        ; iCLK       ; 0.072 ; -0.187 ; Rise       ; iCLK            ;
-+-----------+------------+-------+--------+------------+-----------------+
-
-
 +-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
+; Hold Times                                                              ;
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; oQ        ; iCLK       ; 10.100 ; 10.943 ; Rise       ; iCLK            ;
+; iT        ; iCLK       ; -0.337 ; -0.617 ; Rise       ; iCLK            ;
 +-----------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++-----------+------------+-------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+--------+------------+-----------------+
+; oQ        ; iCLK       ; 9.600 ; 10.352 ; Rise       ; iCLK            ;
++-----------+------------+-------+--------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------+
@@ -526,7 +526,7 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; oQ        ; iCLK       ; 4.721 ; 5.209 ; Rise       ; iCLK            ;
+; oQ        ; iCLK       ; 4.478 ; 4.946 ; Rise       ; iCLK            ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -638,7 +638,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 20 17:53:41 2026
+    Info: Processing started: Thu Nov 05 17:13:07 2026
 Info: Command: quartus_sta ejer6 -c ejer6
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
@@ -654,40 +654,40 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.790
+Info (332146): Worst-case setup slack is -0.787
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.790              -0.790 iCLK 
-Info (332146): Worst-case hold slack is 0.053
+    Info (332119):    -0.787              -0.787 iCLK 
+Info (332146): Worst-case hold slack is 0.058
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.053               0.000 iCLK 
+    Info (332119):     0.058               0.000 iCLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538              -0.859 iCLK 
+    Info (332119):    -0.538              -0.900 iCLK 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.752
+Info (332146): Worst-case setup slack is -0.754
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.752              -0.752 iCLK 
-Info (332146): Worst-case hold slack is 0.025
+    Info (332119):    -0.754              -0.754 iCLK 
+Info (332146): Worst-case hold slack is 0.030
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.025               0.000 iCLK 
+    Info (332119):     0.030               0.000 iCLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538              -0.866 iCLK 
+    Info (332119):    -0.538              -0.921 iCLK 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -698,16 +698,16 @@ Info (332146): Worst-case setup slack is -0.040
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.040              -0.040 iCLK 
-Info (332146): Worst-case hold slack is -0.006
+Info (332146): Worst-case hold slack is 0.004
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.006              -0.006 iCLK 
+    Info (332119):     0.004               0.000 iCLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.318
+Info (332146): Worst-case minimum pulse width slack is -0.319
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.318              -0.318 iCLK 
+    Info (332119):    -0.319              -0.319 iCLK 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332146): Worst-case setup slack is 0.000
@@ -716,21 +716,21 @@ Info (332146): Worst-case setup slack is 0.000
     Info (332119):     0.000               0.000 iCLK 
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case hold slack is -0.031
+Info (332146): Worst-case hold slack is -0.019
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.031              -0.031 iCLK 
+    Info (332119):    -0.019              -0.019 iCLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.317
+Info (332146): Worst-case minimum pulse width slack is -0.323
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.317              -0.317 iCLK 
+    Info (332119):    -0.323              -0.323 iCLK 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4977 megabytes
-    Info: Processing ended: Tue Oct 20 17:53:44 2026
+    Info: Peak virtual memory: 4973 megabytes
+    Info: Processing ended: Thu Nov 05 17:13:10 2026
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
